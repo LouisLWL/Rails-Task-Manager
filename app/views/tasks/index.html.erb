@@ -1,0 +1,13 @@
+<h1> Here are your Tasks! </h1>
+
+<% @tasks.each do |task| %>
+  <%= task.title %>
+  <p> Details: <%= task.details %> </p>
+  <br>
+
+  <%= link_to "Select a Task", task_path(task) %>
+<% end %>
+<br>
+<%= link_to "Creat a new Task", new_task_path %>
+
+<p> Select a Task </p>

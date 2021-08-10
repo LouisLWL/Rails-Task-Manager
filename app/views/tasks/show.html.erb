@@ -1,0 +1,10 @@
+<h1> This is the task you selected </h1>
+<h2><%= @task.title %></h2>
+
+<h1> What do you want to do? </h1>
+<%= link_to "Delete a Task", destroy_task_path %>
+<%= link_to "Edit a Task", edit_task_path %>
+
+<h1> See all the Tasks? </h1>
+
+<%= link_to 'Back to Tasks', tasks_path %>
